@@ -5,6 +5,9 @@
       <h1>
         <%= @user.name %>
       </h1>
+      <% @microposts.each {|micropost| %>
+        <%= render 'layouts/microposts', micropost: micropost %>
+      <% } %>
     </section>
   </aside>
 </div>
