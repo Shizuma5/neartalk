@@ -9,6 +9,8 @@ gem 'bcrypt',         '3.1.11'
 
 gem 'rails-controller-testing'
 
+gem 'faker',          '1.7.3'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
