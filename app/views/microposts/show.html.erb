@@ -1,0 +1,5 @@
+<% provide(:title, "timeline") %>
+
+<%= @microposts.where.not(user_id: @user.id).each{|micropost| %>
+  <%= render "layouts/microposts", micropost: micropost %>
+<% } %>
