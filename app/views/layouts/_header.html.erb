@@ -7,9 +7,16 @@
               <li>
                 <%= link_to "Log out", logout_path, method: :delete %>
               </li>
-              <li>
-                <%= link_to "Profile page", current_user %>
-              </li>
+                <% if request.path_info != user_path(current_user) %>
+                  <li>
+                    <%= link_to "Profile page", current_user %>
+                  </li>
+                <% end %>
+                <% if request.path_info != root_path%>
+                  <li>
+                    <%= link_to "TimeLine", root_path %>
+                  </li>
+                <% end %>
             </ul>
         <% else %>
           <li><%= link_to "Log in", login_path %></li>
