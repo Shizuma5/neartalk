@@ -5,6 +5,9 @@
       <h1>
         <%= @user.name %>
       </h1>
+      <div>
+        <%= link_to "+", micropost_path %>
+      </div>
       <% @microposts.each {|micropost| %>
         <%= render 'layouts/microposts', micropost: micropost %>
       <% } %>
