@@ -7,7 +7,7 @@ class MicropostsController < ApplicationController
 
   def show
     @user = current_user
-    @microposts = Micropost.all
+    @microposts = Micropost.page(params[:page])
   end
 
   def create

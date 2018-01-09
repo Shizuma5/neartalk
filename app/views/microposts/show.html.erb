@@ -3,3 +3,5 @@
 <% @microposts.each{|micropost| %>
   <%= render "layouts/microposts", micropost: micropost %>
 <% } %>
+
+ <%= paginate @microposts %>
