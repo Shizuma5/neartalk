@@ -1,7 +1,5 @@
 <% provide(:title, "timeline") %>
 
-<%= link_to "+", micropost_path, class: "btn" %>
-
 <% @microposts.each{|micropost| %>
   <%= render "layouts/microposts", micropost: micropost %>
 <% } %>
