@@ -11,6 +11,9 @@ gem 'rails-controller-testing'
 
 gem 'faker',          '1.7.3'
 
+#ページネーションするためのgem
+gem "kaminari"
+
 gem 'bootstrap-sass'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
